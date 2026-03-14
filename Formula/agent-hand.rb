@@ -7,16 +7,16 @@ class AgentHand < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/weykon/agent-hand/releases/download/v#{version}/agent-hand-aarch64-apple-darwin.tar.gz"
-      sha256 "94463d42f27fd0386593cbd93f3bb04e43197bae31043101521f9331b1e69b38"
+      sha256 "3fe4e9940235b09d16645c69e36dd1ef0a94b3c486d64bd1acea2e1da337aed6"
     else
       url "https://github.com/weykon/agent-hand/releases/download/v#{version}/agent-hand-x86_64-apple-darwin.tar.gz"
-      sha256 "4f390d6782e048d7fdcf031a076308ed8a6e124cc5cbb941f0544d94547a8dec"
+      sha256 "363b3f9c515574da9ff822cbf933760bb21c0dffea471a9a27a3b72a949e714a"
     end
   end
 
   on_linux do
     url "https://github.com/weykon/agent-hand/releases/download/v#{version}/agent-hand-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "cc13b3e7863481ae6db0d873268b231222f8f79cd318918f01d7c95cf0f9590e"
+    sha256 "f29a82de6a79664b5731295ead2592764b1c8520af26c12748c9c09d68eb2de7"
   end
 
   depends_on "tmux"
