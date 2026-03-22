@@ -1,22 +1,22 @@
 class AgentHand < Formula
   desc "A fast tmux-backed terminal session manager for AI coding agents"
   homepage "https://github.com/weykon/agent-hand"
-  version "0.6.0"
+  version "0.6.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/weykon/agent-hand/releases/download/v#{version}/agent-hand-aarch64-apple-darwin.tar.gz"
-      sha256 "3ff8264174f6a5c7e33e6dc60535093ad04e83ecc82e880f6e5ed44014c1f5e9"
+      sha256 "a8cd63a05af85a52a2ff36afcd8f02253d0670896082add79507385a8ae7920e"
     else
       url "https://github.com/weykon/agent-hand/releases/download/v#{version}/agent-hand-x86_64-apple-darwin.tar.gz"
-      sha256 "f3c545a0b2e124f400408e26e9c8dc765094de5ed1e36ceca24d7298112b5c52"
+      sha256 "cca783d4ce29376cb22a3dc804dfb1c9dce1e7797f04b2267874948788ff19db"
     end
   end
 
   on_linux do
     url "https://github.com/weykon/agent-hand/releases/download/v#{version}/agent-hand-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "6f9e3993dfc36f9cbefe7e9c0f0b25c215289d8f44969dd9d80857c5c6936996"
+    sha256 "6e7b90e8a05d775ea127f1e6c1c811a02116850f22900c35c98b65e2fa800b89"
   end
 
   depends_on "tmux"
